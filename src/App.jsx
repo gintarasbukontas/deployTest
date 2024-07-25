@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+const labas = import.meta.env.VITE_LABAS;
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -24,6 +26,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <h1>{labas}</h1>
       </div>
     </>
   );
